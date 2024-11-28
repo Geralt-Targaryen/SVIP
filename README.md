@@ -46,7 +46,7 @@ A streamlined version of speculative decoding is given in `vanilla-sd`, with thr
 
 For all length policies, two decoding stratigies are available: greedy decoding and temperature sampling with temperature = 1. Change the `sample` argument to switch between them.
 
-Note that our experiments are run on A100 GPUs with 40GB memory. If you use other types of GPUs, please modify the `memory_first_gpu` and `memory_per_gpu` arguments accordingly. `memory_first_gpu` specifies the memory reserved for the target model on the frst GPU, while `memory_per_gpu` specifies the memory reserved on each of the rest GPUs. Draft model is placed on the first GPU, so please take that into consideration when setting `memory_first_gpu`. These two arguments are only used if more than one GPU is used.
+Note that our experiments are run on A100 GPUs with 40GB memory. If you use other types of GPUs, please modify the `memory_first_gpu` and `memory_per_gpu` arguments accordingly. `memory_first_gpu` specifies the memory reserved for the target model on the frst GPU, while `memory_per_gpu` specifies the memory reserved on each of the remaining GPUs. Draft model is placed on the first GPU, so please take that into consideration when setting `memory_first_gpu`. These two arguments are only used if more than one GPU is used.
 
 #### GliDe with a CaPE
 
