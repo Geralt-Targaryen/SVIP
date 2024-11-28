@@ -1,0 +1,15 @@
+{
+  "target_model": "Qwen/Qwen2.5-14B",
+  "draft_model": "Qwen/Qwen2.5-0.5B",
+  "experiment_id": "qwen2.5_14b_0.5b_svip-sample1",
+  "test_data_file": "spec-bench.jsonl",
+  "output_dir": "output",
+  "max_new_tokens": 512,
+  "memory_first_gpu": 18,
+  "memory_per_gpu": 39,
+  "length_policy": "svip",
+  "entropy_threshold": 0.3,
+  "draft_length": 5,
+  "sample": true,
+  "seed": 1
+}
